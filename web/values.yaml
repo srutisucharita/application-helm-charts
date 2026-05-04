@@ -1,0 +1,9 @@
+replicaCount: 2
+
+image:
+  repository: web-image
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
