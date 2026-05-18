@@ -1,5 +1,0 @@
-apiVersion: v2
-name: api
-description: Backend API service
-version: 0.1.0
-appVersion: "1.0"
