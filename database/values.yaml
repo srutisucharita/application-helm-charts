@@ -3,6 +3,7 @@ replicaCount: 1
 image:
   repository: mysql
   tag: "8.0"
+  pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP
@@ -13,8 +14,8 @@ containerPort: 3306
 env:
   MYSQL_DATABASE: appdb
   MYSQL_USER: appuser
-  MYSQL_PASSWORD: secret
-  MYSQL_ROOT_PASSWORD: rootpassword
+  MYSQL_PASSWORD: secret123
+  MYSQL_ROOT_PASSWORD: rootpassword123
 
 persistence:
   enabled: true
